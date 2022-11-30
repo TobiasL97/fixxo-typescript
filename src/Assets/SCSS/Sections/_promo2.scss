@@ -1,0 +1,358 @@
+.promo-2 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    
+    > .container {
+        @include lg {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .pamela-reif {
+            position: relative;
+            img {
+                max-width: 100%;
+                height: 100%;
+                margin-bottom: 1rem;
+            }
+        
+            .pamela-reif-content {
+                position: absolute;
+                top: 20%;
+                right: 10%;
+        
+                @include lg {
+                    top: 20%;
+                    right: 3%;
+                }
+        
+                @include xl {
+                    top: 15%;
+                    right: 5%;
+                }
+        
+                @include xxl {
+                    top: 20%;
+                    right: 5%;
+                }
+        
+                @include xxxl {
+                    top: 20%;
+                    right: 5%;
+                }
+        
+                h1 {
+                    font-size: 5vw;
+                    color: white;
+                    font-weight: bold;
+                    margin-bottom: 2.5rem;
+        
+                    @include sm {
+                        font-size: 1.7rem;
+                    }
+        
+                    @include md {
+                        font-size: $font-size-35;
+                        margin-bottom: 4.5rem;
+                    }
+        
+                    @include lg {
+                        font-size: 2rem;
+                        margin-bottom: 2.5rem;
+                    }
+        
+                    @include xl {
+                        margin-bottom: 3.5rem;
+                    }
+        
+                    @include xxl {
+                        font-size: $font-size-35;
+                    }
+        
+                    @include xxxl {
+                        font-size: $font-size-45;
+                    }
+        
+                    span {
+                        display: block;
+                    }
+                }
+        
+                > .button-theme-dark {
+                    font-size: 0.6rem;
+                    padding: 3vw 6vw;
+                    font-weight: $font-weight-semibold;
+                    font-size: $font-size-13;
+        
+                    @include sm {
+                        padding: 15px 35px;
+                    }
+        
+                    @include md {
+                        padding: 15px 35px;
+                        font-size: $font-size-16;
+                    }
+        
+                    @include lg {
+                        font-size: $font-size-13;
+                    }
+        
+                    @include xxl {
+                        font-size: $font-size-16;
+                    }
+        
+                    @include xxxl {
+                        padding: 20px 50px;
+                    }
+        
+                    .button-theme-left,
+                    .button-theme-right {
+                        position: absolute;
+                        height: 15px;
+                        width: 15px;
+        
+                        @include md {
+                            height: 20px;
+                            width: 20px;
+                        }
+        
+                        @include lg {
+                            height: 15px;
+                            width: 15px;
+                        }
+        
+                        @include xxl {
+                            height: 15px;
+                            width: 15px;
+                        }
+        
+                        @include xxxl {
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                
+                    .button-theme-left {
+                        top: 5px;
+                        left: 5px;
+        
+                        @include sm {
+                            top: 7px;
+                            left: 7px;
+                        }
+        
+                        @include md {
+                            top: 10px;
+                            left: 10px;
+                        }
+        
+                        @include lg {
+                            top: 5px;
+                            left: 5px;
+                        }
+        
+                        @include xxxl {
+                            top: 7px;
+                            left: 7px;
+                        }
+                    }
+                
+                    .button-theme-right {
+                        bottom: 5px;
+                        right: 5px;
+        
+                        @include sm {
+                            bottom: 7px;
+                            right: 7px;
+                        }
+        
+                        @include md {
+                            bottom: 10px;
+                            right: 10px;
+                        }
+        
+                        @include lg {
+                            bottom: 5px;
+                            right: 5px;
+                        }
+        
+                        @include xxxl {
+                            bottom: 7px;
+                            right: 7px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .lets-be-conscious {
+            position: relative;
+            img {
+                max-width: 100%;
+                height: 100%;
+            }
+        
+            .lets-be-conscious-content {
+                position: absolute;
+                top: 20%;
+                left: 10%;
+        
+                @include lg {
+                    top: 20%;
+                    left: 3%;
+                }
+        
+                @include xl {
+                    top: 15%;
+                    left: 5%;
+                }
+        
+                @include xxl {
+                    top: 20%;
+                    left: 5%;
+                }
+        
+        
+                > h1 {
+                    font-size: 5vw;
+                    font-weight: bold;
+                    margin-bottom: 2.5rem;
+                    span {
+                        display: block;
+                    }
+        
+                    @include sm {
+                        font-size: 1.7rem;
+                    }
+        
+                    @include md {
+                        font-size: $font-size-35;
+                        margin-bottom: 4.5rem;
+                    }
+        
+                    @include lg {
+                        font-size: 2rem;
+                        margin-bottom: 2.5rem;
+                    }
+        
+                    @include xl {
+                        margin-bottom: 3.5rem;
+                    }
+        
+                    @include xxl {
+                        font-size: $font-size-35;
+                    }
+        
+                    @include xxxl {
+                        font-size: $font-size-45;
+                    }
+                }
+        
+                > .button-theme-light {
+                    font-size: 0.6rem;
+                    padding: 3vw 6vw;
+                    font-weight: $font-weight-semibold;
+                    font-size: $font-size-13;
+        
+                    @include sm {
+                        padding: 15px 35px;
+                    }
+        
+                    @include md {
+                        padding: 15px 35px;
+                        font-size: $font-size-16;
+                    }
+        
+                    @include lg {
+                        font-size: $font-size-13;
+                    }
+        
+                    @include xxl {
+                        font-size: $font-size-16;
+                    }
+        
+                    @include xxxl {
+                        padding: 20px 50px;
+                    }
+        
+                    .button-theme-left,
+                    .button-theme-right {
+                        position: absolute;
+                        height: 15px;
+                        width: 15px;
+        
+                        @include md {
+                            height: 20px;
+                            width: 20px;
+                        }
+        
+                        @include lg {
+                            height: 15px;
+                            width: 15px;
+                        }
+        
+                        @include xxl {
+                            height: 15px;
+                            width: 15px;
+                        }
+        
+                        @include xxxl {
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                
+                    .button-theme-left {
+                        top: 5px;
+                        left: 5px;
+        
+                        @include sm {
+                            top: 7px;
+                            left: 7px;
+                        }
+        
+                        @include md {
+                            top: 10px;
+                            left: 10px;
+                        }
+        
+                        @include lg {
+                            top: 5px;
+                            left: 5px;
+                        }
+        
+                        @include xxxl {
+                            top: 7px;
+                            left: 7px;
+                        }
+                    }
+                
+                    .button-theme-right {
+                        bottom: 5px;
+                        right: 5px;
+        
+                        @include sm {
+                            bottom: 7px;
+                            right: 7px;
+                        }
+        
+                        @include md {
+                            bottom: 10px;
+                            right: 10px;
+                        }
+        
+                        @include lg {
+                            bottom: 5px;
+                            right: 5px;
+                        }
+        
+                        @include xxxl {
+                            bottom: 7px;
+                            right: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

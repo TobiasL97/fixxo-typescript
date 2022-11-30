@@ -1,0 +1,44 @@
+.product-description {
+
+    margin-bottom: 5rem;
+
+    .description-buttons {
+
+        margin-bottom: 1rem;
+
+        .menu-button {
+            border: none;
+            border-bottom: 1px solid $color-gray-30;
+            padding: 0;
+            background-color: white;
+            margin: 0 1rem 1rem 0;
+        }
+
+        .button-active {
+            border-bottom: 2px solid $color-theme-red;
+        }
+    }
+    
+    .menu-text {
+        font-weight: $font-weight-regular;
+        color: $color-gray-50;
+        font-size: $font-size-13;
+        display: none;
+
+        @include lg {
+            font-size: $font-size-16;
+        }
+
+        > .active {
+            display: block;
+        }
+    }
+
+    .additional-text {
+        display: none;
+    }
+
+    .show-text {
+        display: block;
+    }
+}

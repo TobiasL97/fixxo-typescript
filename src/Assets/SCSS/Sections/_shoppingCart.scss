@@ -1,0 +1,97 @@
+.shoppingcart {
+    width: 100% !important;
+
+    @include sm {
+        width: 400px !important;
+    }
+
+    @include lg {
+        width: 500px !important;
+    }
+
+    .shoppingcart-item {
+        display: flex;
+        align-items: end;
+        margin-bottom: 2rem;
+        justify-content: center;
+
+        .item-image {
+            width: 60px;
+            height: 60px;
+            background-color: $color-gray-40;
+            margin-right: 2rem;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .item-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 2rem;
+
+            .item-info-name {
+                font-size: $font-size-13;
+                width: 7rem;
+                font-weight: $font-weight-medium;
+                margin-bottom: 0.2rem;
+            }
+
+            .quantity-button {
+                display: flex;
+                align-items: center;
+                border: 1px solid $color-dark-10;
+                width: max-content;
+                margin-right: 2rem;
+
+                @include lg {
+                    margin-right: 2rem;
+                }
+
+                .quantity-number {
+                    padding: 0rem 0.25rem;
+                    margin: 0 0.25rem;
+                    font-weight: $font-weight-semibold;
+                    font-size: $font-size-13;
+                }
+
+                .increase,
+                .decrease {
+                    border: none;
+                    background-color: rgb(243, 243, 243);
+                    padding: 0rem 0.5rem;
+
+                    > i {
+                        font-size: $font-size-16;
+                    }
+                }
+
+                .increase {
+                    border-left: 1px solid $color-dark-10;
+                }
+
+                .decrease {
+                    border-right: 1px solid $color-dark-10;
+                }
+            }
+        }
+
+        .item-price {
+
+            display: flex;
+
+            .product-price {
+                margin-right: 2rem;
+            }
+
+            .remove-product {
+                border: none;
+                padding: 0;
+                background-color: white;
+            }
+        }
+    }
+}

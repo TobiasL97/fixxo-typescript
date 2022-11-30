@@ -1,0 +1,258 @@
+.promo {
+
+    margin-top: 2rem;
+
+    > .container {
+
+        @include lg {
+            display: flex;
+            align-items: center;
+        }
+
+        .winter-promo {
+
+            position: relative;
+        
+            img {
+                width: 100%;
+            }
+        
+            h1 {
+                position: absolute;
+                top: 25%;
+                left: 5%;
+                font-size: 4vw;
+                font-weight: $font-weight-bold;
+        
+                @include sm {
+                    font-size: 1.5rem;
+                }
+        
+                @include md {
+                    font-size: 2rem;
+                }
+        
+                @include lg {
+                    font-size: 1.5rem;
+                    top: 15%;
+                }
+                
+                @include xl {
+                    top: 20%;
+                    font-size: 1.9rem;
+                }
+        
+                @include xxl {
+                    font-size: 2.4rem;
+                }
+        
+                @include xxxl {
+                    font-size: $font-size-45;
+                    top: 15%;
+                }
+            }
+        
+            span {
+                display: block;
+            }
+        
+            p {
+                position: absolute;
+                top: 45%;
+                left: 5%;
+                width: 17rem;
+                font-size: 0.7rem;
+                display: none;
+        
+                @include lg {
+                    display: block;
+                }
+        
+                @include xl {
+                    top: 55%;
+                    width: 23rem;
+                    font-size: 0.8rem;
+                }
+        
+                @include xxl {
+                    font-size: $font-size-13;
+                    width: 23rem;
+                }
+        
+                @include xxxl {
+                    font-size: $font-size-16;
+                    width: 27rem;
+                    top: 45%;
+                }
+            }
+        
+            > .button-theme-dark {
+                position: absolute;
+                left: 5%;
+                top: 65%;
+                font-size: $font-size-13;
+                padding: 4vw 8vw;
+        
+                @include sm {
+                    font-size: $font-size-16;
+                    padding: 15px 45px;
+                }
+        
+                @include md {
+                    padding: 20px 50px;
+                }
+        
+                @include lg {
+                    top: 75%;
+                    padding: 10px 25px;
+                }
+        
+                @include xl {
+                    top: 80%;
+                }
+        
+                @include xxl {
+                    padding: 15px 35px;
+                }
+        
+                @include xxxl {
+                    top: 70%;
+                    padding: 20px 50px;
+                }
+        
+                .button-theme-left,
+                .button-theme-right {
+                    position: absolute;
+                    height: 15px;
+                    width: 15px;
+        
+                    @include xxl {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            
+                .button-theme-left {
+                    top: 7px;
+                    left: 7px;
+                }
+            
+                .button-theme-right {
+                    bottom: 7px;
+                    right: 7px;
+                }
+            }
+        }
+
+        .new-arrivals-promo {
+
+            position: relative;
+            margin-top: 0.5rem;
+        
+            @include lg {
+                margin-top: 0;
+            }
+        
+            img {
+                width: 100%;
+            }
+        
+            h1 {
+                position: absolute;
+                left: 5%;
+                top: 15%;
+                font-size: 9vw;
+                font-weight: $font-weight-bold;
+        
+                @include sm {
+                    font-size: $font-size-45;
+                    top: 35%;
+                }
+        
+                @include md {
+                    top: 40%;
+                }
+        
+                @include lg {
+                    font-size: 1.7rem;
+                    top: 35%;
+                }
+        
+                @include xl {
+                    font-size: $font-size-35;
+                }
+                
+                @include xxl {
+                    font-size: $font-size-35;
+                }
+        
+                @include xxxl {
+                    font-size: $font-size-45;
+                    top: 30%;
+                }
+            }
+        
+            span {
+                display: block;
+            }
+        
+            > .button-theme-dark {
+                position: absolute;
+                left: 5%;
+                top: 65%;
+                font-size: $font-size-13;
+                padding: 4vw 8vw;
+        
+                @include sm {
+                    top: 75%;
+                    font-size: $font-size-16;
+                    padding: 15px 45px;
+                }
+        
+                @include md {
+                    padding: 20px 50px;
+                }
+        
+                @include lg {
+                    top: 75%;
+                    padding: 10px 25px;
+                }
+        
+                @include xl {
+                    top: 80%;
+                }
+        
+                @include xxl {
+                    padding: 15px 35px;
+                }
+        
+                @include xxxl {
+                    top: 70%;
+                    padding: 20px 50px;
+                }
+        
+                .button-theme-left,
+                .button-theme-right {
+                    position: absolute;
+                    height: 15px;
+                    width: 15px;
+        
+                    @include xxl {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            
+                .button-theme-left {
+                    top: 7px;
+                    left: 7px;
+                }
+            
+                .button-theme-right {
+                    bottom: 7px;
+                    right: 7px;
+                }
+            }
+        }
+    }
+}

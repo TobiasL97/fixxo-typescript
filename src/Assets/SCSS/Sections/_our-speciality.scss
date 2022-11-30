@@ -1,0 +1,70 @@
+.our-speciality {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @include lg {
+        margin-top: 4rem;
+        margin-bottom: 0rem;
+    }
+
+    > h1 {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: $font-size-20;
+        font-weight: $font-weight-bold;
+
+        @include md {
+            top: 4%;
+        }
+
+        @include lg {
+            top: 7%;
+        }
+    }
+
+    .get-started {
+        transition: 0.2s ease-in-out;
+        &:hover {
+            color: $color-theme-red;
+        }
+    }
+
+    > .our-speciality-grid {
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(3, 125px);
+        gap: 2rem;
+        justify-content: center;
+        padding: 6.875rem 4.375rem 4.375rem 4.375rem;
+        background-color: $color-off-white;
+
+        @include sm {
+            grid-template-columns: 350px;
+            grid-template-rows: repeat(3, 150px);
+        }
+
+        @include md {
+            grid-template-columns: 380px;
+            grid-template-rows: repeat(3, 160px);
+        }
+
+        @include lg {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 149px;
+            padding: 6.875rem 4.375rem 4.375rem 4.375rem;
+        }
+
+        @include xl {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 200px;
+            padding: 6.875rem 4.375rem 4.375rem 4.375rem;
+        }
+
+        @include xxl {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 232px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.company-service {
+
+    > .container-small {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 5rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        border-top: 2px solid $color-gray-30;
+        width: 90%;
+    
+    
+        @include sm {
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        @include md {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    
+        @include lg {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    
+        .Support-Offer {
+    
+            text-align: center;
+    
+            > i {
+                font-size: $font-size-20;
+                box-shadow: 0 5px 10px 3px $color-gray-20;
+                border-radius: 50%;
+                padding: 0.7rem; 
+            }
+    
+            > h1 {
+                font-size: $font-size-16;
+                font-weight: $font-weight-bold;
+                margin-top: 1.5rem;
+    
+                @include lg {
+                    font-size: $font-size-20;
+                }
+            }
+    
+            > p {
+                font-size: $font-size-13;
+                margin: 1rem 0 0 0;
+    
+                @include lg {
+                    font-size: $font-size-16;
+                }
+                
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+}

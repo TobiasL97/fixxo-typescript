@@ -1,0 +1,117 @@
+.sale {
+    margin-top: 4rem;
+
+    @include xxl {
+        padding: 0;
+    }
+
+    .sale-content {
+        background-color: $color-gray-45;
+        align-items: center;
+        text-align: center;
+        padding: 0rem;
+
+        @include lg {
+            padding: 4rem;
+        }
+        
+        .sale-text {
+            color: white;
+            padding-bottom: 2rem;
+
+            > h1 {
+                font-size: $font-size-35;
+                margin-bottom: 0.5rem;
+                margin-top: 1rem;
+
+                @include lg {
+                    font-size: $font-size-45;
+                }
+            }
+
+            > p {
+                font-size: $font-size-13;
+                font-weight: $font-weight-bold;
+                margin-bottom: 2rem;
+
+                @include lg {
+                    font-size: $font-size-20;
+                    margin-bottom: 3rem;
+                }
+            }
+
+            .button-theme-light {
+                padding: 0.6rem 2rem;
+                font-size: $font-size-16;
+
+                @include lg {
+                    padding: 1.25rem 3.125rem;
+                }
+
+                .button-theme-left,
+                .button-theme-right {
+                    height: 15px;
+                    width: 15px;
+
+                    @include lg {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            
+                .button-theme-left {
+                    top: 7px;
+                    left: 7px;
+
+                    @include lg {
+                        top: 10px;
+                        left: 10px;
+                    }
+                }
+            
+                .button-theme-right {
+                    bottom: 7px;
+                    right: 7px;
+
+                    @include lg {
+                        bottom: 10px;
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sale-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 4rem;
+        @include md {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include xl {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .sale-product-grid {
+            grid-template-columns: 330px;
+            gap: 1.5rem;
+            justify-content: center;
+
+            @include sm {
+                grid-template-columns: 350px;
+            }
+
+            @include md {
+                justify-content: start;
+            }
+
+            > h1 {
+                margin-bottom: 0rem;
+                font-size: $font-size-20;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.footer {
+    border-top: 1px solid $color-gray-40;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    background-color: $color-off-white-10;
+    text-align: center;
+
+    > i {
+        margin: 0 0.5rem;
+    }
+
+    > p {
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+        font-size: $font-size-16;
+        font-weight: $font-weight-regular;
+        color: $color-gray-50;
+
+    }
+}

@@ -1,0 +1,366 @@
+.product-detail-container {
+
+    > .container-small {
+        padding-top: 4rem;
+        
+        @include lg {
+            padding: 0;
+        }
+    
+        > p {
+            color: $color-theme-red;
+            text-align: center;
+            margin: 2rem 0 1rem 0;
+            padding: 0.5rem;
+            box-shadow: 0 0 5px 1px rgba(230, 230, 230, 0.507);
+            font-size: $font-size-13;
+            font-weight: $font-weight-medium;
+    
+            .shop-now {
+                color: $color-theme-red;
+    
+                &:hover {
+    
+                    text-decoration: underline;
+                }
+            }
+    
+            @include sm {
+                font-size: $font-size-16;
+            }
+        }
+
+        > .__breadcrumb {
+            padding: 1.5rem 0 0 0;
+
+            > .container-small {
+                padding: 0 0 0 0;
+            }
+        }
+
+        .product-view {
+
+            margin-bottom: 2rem;
+
+            @include lg {
+                display: flex;
+            }
+            
+        }
+
+        .product-images {
+            display: grid;
+            grid-template-columns:  1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 132px);
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1rem;
+
+            @include sm {
+                grid-template-columns:  160px 160px 160px;
+                grid-template-rows: repeat(4, 132px);
+            }
+
+            @include lg {
+                justify-content: start;
+                gap: 2rem;
+            }
+
+            #image1 {
+                grid-column: 1 / -1;
+                grid-row: 1 / 3;
+                object-fit: cover;
+
+                @include sm {
+                    grid-row: 1 / 4;
+                }
+            }
+
+            .images {
+                background-color: $color-gray-10;
+            }
+        }
+
+        .product-detail {
+
+            @include md {
+                padding: 0 5.5rem;
+            }
+
+            @include lg {
+                display: block;
+                padding: 0;
+                margin-left: 2rem;
+            }
+
+            .product-details {
+
+                @include sm {
+                    margin-right: 5rem;
+                }
+
+                .product-name {
+
+                    font-size: $font-size-24;
+                    font-weight: $font-weight-bold;
+                    color: $color-dark-20;
+                }
+    
+                .sku {
+                    display: inline-block;
+                    color: $color-gray-50;
+                    font-size: $font-size-13;
+                    margin: 0  
+                }
+    
+                .brand {
+                    display: block;
+                    margin: 0;
+                    color: $color-gray-50;
+                    font-size: $font-size-13; 
+
+                    @include lg {
+                        display: inline-block;
+                        margin: 0 0.5rem;
+                    }
+                }
+    
+                .product-rating {
+                    color: $color-theme-red;
+                    margin: 0.5rem 0;
+                }
+    
+                .product-price {
+                    font-size: $font-size-18;
+                    font-weight: $font-weight-semibold;
+                    color: $color-dark-10;
+                    margin-bottom: 0.5rem;
+
+                    @include lg {
+                        margin-bottom: 1rem;
+                    }
+                }
+    
+                .product-text {
+                    font-size: $font-size-13;
+                    color: $color-gray-50;
+                    display: none;
+                    width: 25rem;
+
+                    @include lg {
+                        display: block;
+                        font-size: $font-size-16;
+                        margin-bottom: 1rem;
+                    }
+    
+                    .product-readmore {
+                       color: #6794C2;
+                       
+                       &:hover {
+                        text-decoration: underline;
+                       }
+                    }
+                }
+            }
+
+            .add-to-cart-form {
+                margin-bottom: 2rem;
+
+                .choose-size {
+                    margin-bottom: 1rem;
+    
+                    input[type="radio"] {
+                        display: none;
+        
+                        &:checked + label {
+                            background-color: $color-dark-20;
+                            color: white;
+                        }
+                    }
+
+                    .choose-size-text {
+                        display: inline;
+                        margin-right: 1.3rem;
+                        font-weight: $font-weight-medium;
+                        
+                        @include lg {
+                            margin-right: 2.25rem;
+                        }
+                    }
+        
+                    .product-size {
+                        position: relative;
+                        border: 1px solid $color-gray-50;
+                        color: $color-dark-10;
+                        padding: 5px 10px;
+                        margin-right: 0.5rem;
+                        font-weight: $font-weight-medium;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        
+                    }
+                }
+
+                .select-color {
+
+                    .color-text {
+                        display: inline;
+                        margin-right: 0.55rem;
+                        font-weight: $font-weight-medium;
+                        
+                        @include lg {
+                            margin-right: 1.5rem;
+                        }
+                    }
+
+                    .color-select {
+                        border: 1px solid $color-gray-50;
+                        color: $color-gray-50;
+                        background-color: white;
+                        padding: 0.5rem 0.5rem;
+                        font-size: $font-size-14;
+                        font-weight: $font-weight-regular;
+        
+                        > i {
+                            margin-left: 1rem;
+                            padding-right: 0.5rem;
+                        }
+                    }
+                }
+
+                .quantity-submit {
+
+                    display: flex;
+                    margin-top: 1rem;
+                    align-items: center;
+                    
+                    @include lg {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .quantity-text {
+                        margin: 0 1.5rem 0 0;
+                        font-weight: $font-weight-medium;
+
+                        @include lg {
+                            margin: 0 2.5rem 0 0;
+                        }
+                    }
+                    
+
+                    .quantity-button {
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid $color-dark-10;
+                        width: max-content;
+                        margin: 0 1rem 0 0;
+    
+                        @include lg {
+                            margin-right: 2rem;
+                        }
+    
+                        .quantity-number {
+                            padding: 0rem 1rem;
+                            margin: 0;
+                            font-weight: $font-weight-semibold;
+                        }
+    
+                        .increase,
+                        .decrease {
+                            border: none;
+                            background-color: white;
+                            padding: 0.5rem 0.5rem;
+                            font-size: $font-size-16;
+                            font-weight: $font-weight-semibold;
+                        }
+    
+                        .increase {
+                            border-left: 1px solid $color-dark-10;
+                        }
+    
+                        .decrease {
+                            border-right: 1px solid $color-dark-10;
+                        }
+                    }
+                }
+
+                .add-to-cart-button {
+                    color: white;
+                    background-color: $color-theme-red;
+                    font-weight: $font-weight-semibold;
+                    padding: 0.5rem 1.5rem;
+                    font-size: $font-size-13;
+                    border: none;
+                    transition: 0.2s ease-in-out;
+
+                    &:hover {
+                        background-color: #c45d5d;
+                        color: white;
+                    }
+
+                    @include sm {
+                        font-size: $font-size-16;
+                    }
+                }
+            }
+
+            .share-socialmedia {
+                display: none;
+                align-items: center;
+
+                @include lg {
+                    display: flex;
+                }
+
+                .share-text {
+                    margin: 0;
+                    font-weight: $font-weight-medium;
+                    margin-right: 1rem;
+                }
+
+                .share-socialmedia-links {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $color-dark-20;
+                    margin: 0 0.5rem;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    background-color: #F4F4F4;
+                }
+            }
+        }
+
+        > .product-grid {
+
+            display: none;
+    
+            @include md {
+                display: grid;
+                justify-content: center;
+            }
+    
+            > h1 {
+                font-size: $font-size-20;
+                font-weight: $font-weight-bold;
+                text-align: center;
+                margin-bottom: 2rem;
+    
+                @include lg {
+                    text-align: start;
+                }
+            }
+    
+            > .container-small {
+                padding: 0;
+                gap: 2rem;
+                justify-content: flex-start;
+            }
+        }
+    }
+}
+

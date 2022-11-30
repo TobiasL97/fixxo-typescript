@@ -1,0 +1,188 @@
+.header-gray{
+    position: relative;
+    background-color: $color-gray-10;
+}
+    .__navbar {
+        position: fixed;
+        padding: 1rem 1rem;
+        align-items: center;
+        font-size: $font-size-16;
+        font-weight: $font-weight-medium;
+        background-color: $color-gray-10;
+        width: 100%;
+        z-index: 1;
+        left: 0;
+
+        @include lg {
+            position: relative;
+            padding: 1rem 0rem;
+        }
+
+        .Mobile-Menu {
+            display: flex;
+            align-items: center;
+            position: absolute;
+
+            .hamburger-icon {
+                position: absolute;
+        
+                &.is-active {
+        
+                    span:first-child {
+                        transform: translateY(0.5rem) rotate(45deg);
+                        
+                    }
+                    
+                    span:nth-child(2) {
+                        opacity: 0;
+                    }
+        
+                    span:last-child {
+                        transform: translateY(-0.5rem) rotate(-45deg);
+                    }
+                    
+                }
+                .bar {
+                    display: block;
+                    right: 1rem;
+                    width: 1.5rem;
+                    height: 0.2rem;
+                    margin: 0.3rem 0;
+                    background-color: $color-dark-20;
+                    transition: 0.3s ease-in-out;
+                    
+                    @include md {
+                        display: none;
+                    }
+                    
+                }
+            }
+        
+            .hamburger-menu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                top: 5rem;
+                right: 100%;
+                width: 100%;
+                padding: 0.5rem 0 0.5rem 0rem;
+                background-color: white;
+                opacity: 95%;
+                transition: 0.3s ease-in-out;
+
+                @include lg {
+                    display: none;
+                }
+
+                &.is-active {
+                    right: 0rem;
+                }
+
+        
+                .mobile-menu-link {
+                    display: block;
+                    text-align: center;
+                    color: $color-dark-20;
+                    transition: 0.2s ease-in-out;
+                    margin: 0 0.5rem;
+        
+                    &:hover {
+                        color: $color-theme-red;
+                    }
+                }
+            }
+        }
+
+    .fixxo-logo{
+        margin-left: 3rem;
+
+        @include lg {
+            margin-left: 0;
+        }
+    }
+
+    .navbar-middle-links {
+
+        display: none;
+
+        @include md{
+            display: inline;
+        }
+
+        @include lg {
+            margin-left: 0rem;
+        }
+
+        .navbar-middle-link {
+            margin: 0.5rem;
+            color: $color-dark-20;
+            transition: 0.2s ease-in-out;
+
+            @include lg {
+
+                margin: 1rem;
+            }
+
+            &:hover {
+                color: $color-theme-red;
+                cursor: pointer;
+            }
+        }
+
+        .active {
+            color: $color-theme-red;
+        }
+    } 
+
+    .navbar-icons {
+        display: flex;
+
+        > button {
+            border: none;
+        }
+
+        
+        .navbar-icon {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            box-shadow: 0 0 8px 0.5px grey;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            margin: 0 0.25rem;
+            font-size: $font-size-16;
+            color: $color-dark-20;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+
+                &:hover {
+                    color: $color-theme-red;
+                }
+    
+            }
+            
+            > .navbar-icon {
+                transition: 0.2s ease-in-out;
+                color: $color-dark-20;
+            }
+
+            &:nth-child(2) {
+                display: none;
+
+                @include lg {
+                    display: flex;
+                }
+            }
+
+            @include sm {
+                margin: 0 0.5rem;
+        
+            }
+        }
+    }
+}

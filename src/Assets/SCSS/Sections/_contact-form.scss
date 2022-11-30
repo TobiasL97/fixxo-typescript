@@ -1,0 +1,77 @@
+.contact-form {
+    margin-bottom: 18rem;
+    > .container-small {
+
+        > h2 {
+            font-size: $font-size-18;
+            font-weight: $font-weight-bold;
+            margin-bottom: 2rem;
+        }
+    
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+
+            @include sm {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            input {
+                padding: 1.25rem 1.125rem;
+                font-family: $font-poppins;
+                border: 1px solid $color-gray-35;
+                width: 100%;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .textarea {
+                grid-column: 1 / -1;
+            }
+
+            textarea {
+                grid-column: 1 / -1;
+                padding: 1.25rem 1.125rem;
+                font-family: $font-poppins;
+                border: 1px solid $color-gray-35;
+                resize: none;
+                height: 8.75rem;
+                width: 100%;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .button-theme {
+                padding: 0px 50x;
+                font-size: $font-size-16;
+                font-weight: $font-weight-semibold;
+                border: none;
+
+                &:hover {
+                    background-color: #c45858;
+                    cursor: pointer;
+                }
+            }
+        
+
+            .valid {
+                border: 1px solid rgb(2, 214, 2);
+            }
+
+            .error {
+                border: 1px solid $color-theme-red;
+            }
+
+            .errorMessage {
+                margin-top: 0.5rem;
+                color: $color-theme-red;
+                font-size: 0.8em;
+            }
+        }
+    }
+}

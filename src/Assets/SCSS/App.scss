@@ -1,0 +1,31 @@
+@import "./Core/variables";
+@import "./Core/globals";
+@import "./Core/utilities";
+@import "./Core/breakpoints";
+
+// HomeView SCSS
+@import "./Sections/header";
+@import "./Sections/showcase";
+@import "./Sections/promo";
+@import "./Sections/promo2";
+@import "./Sections/our-speciality";
+@import "./Sections/TwoFor29";
+@import "./Sections/TwoFor49";
+@import "./Sections/company-service";
+@import "./Sections/footer";
+@import "./Sections/sale";
+@import "./Sections/product-grid";
+@import "./sections/shoppingCart";
+
+// ContactsView SCSS
+@import "./Sections/breadcrumb";
+@import "./Sections/map";
+@import "./Sections/contact-form";
+@import "./Sections/header-white";
+
+// ProductDetailsView
+@import "./Sections/productdetails";
+@import "./Sections/product-description";
+
+//HandleProduct
+@import "./Sections/products-form";
