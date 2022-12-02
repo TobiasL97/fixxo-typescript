@@ -6,11 +6,13 @@ import { IProductContextType, ProductContext } from '../Contexts/ProductContext'
 
 const Sale: React.FC = () => {
 
-  const { saleProducts, getSaleProducts} = React.useContext(ProductContext) as IProductContextType;
+  const { reactedProducts, bestSellingProducts, saleFeaturedProducts, getSaleFeaturedProducts, getReactedProducts, getBestSellingProducts} = React.useContext(ProductContext) as IProductContextType;
 
   useEffect(() => {
-    getSaleProducts(4)
-  }, [])
+    getReactedProducts(4)
+    getBestSellingProducts(4)
+    getSaleFeaturedProducts(4)
+  }, [getReactedProducts])
 
   return (
     <section className="sale container-small">
@@ -23,9 +25,9 @@ const Sale: React.FC = () => {
         </div>
 
         <div className="sale-grid grid">
-            <SaleProductGrid products={saleProducts} title="Featured Products"/>
-            <SaleProductGrid products={saleProducts} title="Best Selling Products" />
-            <SaleProductGrid products={saleProducts} title="Top Reacted Products" />
+          <SaleProductGrid products={saleFeaturedProducts} title="Featured Products"/>
+          <SaleProductGrid products={bestSellingProducts} title="Best Selling Products" />
+          <SaleProductGrid products={reactedProducts} title="Top Reacted Products" />
 
 
         </div>

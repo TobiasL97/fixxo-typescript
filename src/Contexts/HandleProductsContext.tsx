@@ -21,7 +21,7 @@ export const useHandleProductsContext = () => { return useContext(HandleProducts
 const HandleProductsProvider: React.FC<IHandleProductsProviderProps> = ({children}) => {
 
     const baseUrl = 'http://localhost:5000/api/products'
-    const productDefaultValues: Product = {articleNumber: '', name: '', description: '', category: '', price: 0, rating: 0, imageName: ''}
+    const productDefaultValues: Product = {tag: "", articleNumber: '', name: '', description: '', category: '', price: 0, rating: 0, imageName: ''}
     const productRequestDefaultValues: ProductRequest = {name: '', description: '', category: '', price: 0, rating: 0, imageName: ''}
 
     const [product, setProduct] = useState<Product>(productDefaultValues)
@@ -65,7 +65,7 @@ const HandleProductsProvider: React.FC<IHandleProductsProviderProps> = ({childre
         headers: {
           'content-type': 'application/json'
         },
-        body: JSON.stringify(productRequest)
+        body: JSON.stringify(product)
       })
 
       if(result.status ===200) {

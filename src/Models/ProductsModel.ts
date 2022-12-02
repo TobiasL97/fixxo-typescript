@@ -1,6 +1,7 @@
 
 export interface Product{
-    articleNumber: any;
+    tag: string,
+    articleNumber: string;
     name: string;
     description?: string;
     category: string;

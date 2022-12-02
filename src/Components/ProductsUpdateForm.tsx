@@ -4,10 +4,15 @@ import { IHandleProductsContext, HandleProductsContext } from '../Contexts/Handl
 
 const ProductsUpdateForm: React.FC = () => {
 
+    const articleNumber = useParams()
     const { product, setProduct, update, get } = React.useContext(HandleProductsContext) as IHandleProductsContext
 
+    useEffect(() => {
+      get(articleNumber)
+    }, [])
+
   return (
-    <form onSubmit={update} className="d-grid mb-5">
+    <form onSubmit={update} className="mb-5">
         <h3 className="display-6 mb-4">Update Product</h3>
         <input type="hidden" value={product.articleNumber}></input>
         <input value={product.name} onChange={(e) => setProduct({...product, name: e.target.value})} type="text" className="form-control py-2 mb-3" placeholder="Enter product name..."></input>
@@ -16,7 +21,7 @@ const ProductsUpdateForm: React.FC = () => {
         <input value={product.price} onChange={(e) => setProduct({...product, price: parseInt(e.target.value)})} type="text" className="form-control py-2 mb-3" placeholder="Enter product price..."></input>
         <input value={product.rating} onChange={(e) => setProduct({...product, rating: parseInt(e.target.value)})} type="text" className="form-control py-2 mb-3" placeholder="Enter product rating..."></input>
         <input value={product.imageName} onChange={(e) => setProduct({...product, imageName: e.target.value})} type="text" className="form-control py-2 mb-3" placeholder="Enter image-url"></input>
-        <button type="submit" className="btn btn-success py-2 mt-3">CREATE PRODUCT</button>
+        <button type="submit" className="btn btn-success py-2 mt-3">UPDATE PRODUCT</button>
 
     </form>
   )

@@ -14,13 +14,12 @@ import Footer from '../Sections/Footer'
 
 const HomeView: React.FC = () => {
 
-  const { featuredProducts, getFeaturedProducts, twoFor29Products, getTwoFor29Products, twoFor49Products, getTwoFor49Products, saleProducts, getSaleProducts } = React.useContext(ProductContext) as IProductContextType;
+  const { featuredProducts, getFeaturedProducts, twoFor29Products, getTwoFor29Products, twoFor49Products, getTwoFor49Products } = React.useContext(ProductContext) as IProductContextType;
 
   useEffect(() => {
     getFeaturedProducts(8)
     getTwoFor29Products(4)
     getTwoFor49Products(4)
-    getSaleProducts(4)
 
   }, [])
 
@@ -34,7 +33,7 @@ const HomeView: React.FC = () => {
       <OurSpeciality />
       <TwoFor29 title="2 FOR USD $29" products={twoFor29Products}/>
       <TwoFor49 title="2 FOR USD $49" products={twoFor49Products}/>
-      <Sale/>
+      <Sale />
       <CompanyService />
       <Footer />
     </>
