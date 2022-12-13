@@ -26,4 +26,5 @@ export interface ProductRequest {
     price: number;
     rating?: number;
     imageName?: string;
+    tag: string
 }

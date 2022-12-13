@@ -1,8 +1,9 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { NavLink, useParams } from 'react-router-dom'
 
 const ProductDetail: React.FC = () => {
 
+    
 
   return (
     <div className="product-view">

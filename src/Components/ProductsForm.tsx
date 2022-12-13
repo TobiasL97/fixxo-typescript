@@ -14,6 +14,7 @@ const ProductsForm: React.FC = () => {
         <input value={productRequest.price} onChange={(e) => setProductRequest({...productRequest, price: parseInt(e.target.value)})} type="text" className="form-control py-2 mb-3" placeholder="Enter product price..."></input>
         <input value={productRequest.rating} onChange={(e) => setProductRequest({...productRequest, rating: parseInt(e.target.value)})} type="text" className="form-control py-2 mb-3" placeholder="Enter product rating..."></input>
         <input value={productRequest.imageName} onChange={(e) => setProductRequest({...productRequest, imageName: e.target.value})} type="text" className="form-control py-2 mb-3" placeholder="Enter image-url"></input>
+        <input value={productRequest.tag} onChange={(e) => setProductRequest({...productRequest, tag: e.target.value})} type="text" className="form-control py-2 mb-3" placeholder="Enter a tag"></input>
         <button type="submit" className="btn btn-success py-2 mt-3">CREATE PRODUCT</button>
     </form>
   )

@@ -58,7 +58,7 @@ export const useProductContext = () => {
 
     const getProduct = async (articleNumber: string) => {
         if (articleNumber !== undefined) {
-            const res = await fetch(`${url}/details/${articleNumber}`)
+            const res = await fetch(`${url}/product/details/${articleNumber}`)
             setProduct(await res.json())
         }
     }
@@ -133,7 +133,13 @@ export const useProductContext = () => {
     }
 
     const getRelatedProducts = async (take = 0) => {
-        const res = await fetch(url + `?take=${take}`)
+        let baseurl = `${url}/related`
+
+        if (take !== 0) {
+            baseurl += `/${take}`
+        }
+
+        const res = await fetch(baseurl)
         setRelatedProducts(await res.json())
     }
 

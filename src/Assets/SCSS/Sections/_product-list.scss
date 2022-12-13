@@ -1,0 +1,29 @@
+.productlist-details {
+    margin-bottom: 2rem;
+
+    .productlist-name {
+        margin-right: 2rem;
+    }
+    
+    .productlist-price {
+        margin-right: 2rem;
+    }
+
+    .productlist-tag {
+        margin-right: 2rem;
+    }
+
+    #productlist-edit {
+        margin-right: 2rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .productlist-delete {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
