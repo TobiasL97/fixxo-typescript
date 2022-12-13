@@ -1,16 +1,12 @@
 .productlist-details {
     margin-bottom: 2rem;
 
-    .productlist-name {
-        margin-right: 2rem;
-    }
-    
-    .productlist-price {
+    .productlist {
         margin-right: 2rem;
     }
 
-    .productlist-tag {
-        margin-right: 2rem;
+    .productlist-key {
+        font-weight: $font-weight-bold;
     }
 
     #productlist-edit {

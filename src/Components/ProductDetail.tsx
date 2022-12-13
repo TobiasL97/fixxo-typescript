@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
+import { ProductContext, IProductContextType } from '../Contexts/ProductContext';
 
 const ProductDetail: React.FC = () => {
 
-    
 
   return (
     <div className="product-view">

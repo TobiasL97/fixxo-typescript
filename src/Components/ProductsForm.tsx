@@ -6,7 +6,7 @@ const ProductsForm: React.FC = () => {
     const { productRequest, setProductRequest, create } = React.useContext(HandleProductsContext) as IHandleProductsContext
 
   return (
-    <form onSubmit={create} className="products-form">
+    <form onSubmit={create} className="products-form mb-5">
         <h3 className="display-6 mb-4">Create Product</h3>
         <input value={productRequest.name} onChange={(e) => setProductRequest({...productRequest, name: e.target.value})} type="text" className="form-control py-2 mb-3" placeholder="Enter product name..."></input>
         <input value={productRequest.description} onChange={(e) => setProductRequest({...productRequest, description: e.target.value})} type="text" className="form-control py-2 mb-3" placeholder="Enter product description..."></input>
