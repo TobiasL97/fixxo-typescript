@@ -12,7 +12,7 @@ const ProductsUpdateForm: React.FC = () => {
 
   return (
     <form onSubmit={update} className="mb-5">
-      <h3 className="display-6 mb-4">Update Product</h3>
+      <h3 className="display-6 mb-4">Update Product <span className="update-product-span">(Tryck på pennan för att uppdatera produkt)</span></h3>
       <input type="hidden" value={product.articleNumber}></input>
       <div className="updateform-name">
         <label className="mb-1"><strong>Product name:</strong></label>

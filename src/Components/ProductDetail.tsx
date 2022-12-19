@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
-import { NavLink, useParams } from 'react-router-dom'
-import { ProductContext, IProductContextType } from '../Contexts/ProductContext';
+import { NavLink } from 'react-router-dom'
 
 const ProductDetail: React.FC = () => {
 

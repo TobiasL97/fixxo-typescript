@@ -17,6 +17,7 @@ const HeaderWhite: React.FC = () => {
                     <NavLink className="navbar-middle-link" to="/categories" end>Categories</NavLink>
                     <NavLink className="navbar-middle-link" to="/products" end>Products</NavLink>
                     <NavLink className="navbar-middle-link" to="/contacts" end>Contacts</NavLink>
+                    <NavLink className="navbar-middle-link" to="/handleproduct" end>Handle product</NavLink>
                 </div>
 
                 <div className="navbar-icons">
